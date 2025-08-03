@@ -1,0 +1,87 @@
+body{
+    background-image: 
+     url(images/pattern-background-desktop.svg),
+     linear-gradient(hsl(225, 100%, 94%));
+     height: 100vh;
+     background-repeat: no-repeat;
+     background-size: contain;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+}
+.container{
+    width: 450px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.container .image img{
+    width: 100%;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.icon{
+    display: flex;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 15px;
+    padding: 15px;
+    width: 80%;
+    height: 50px;
+}
+.text {
+    margin-left: 20px;
+}
+.icon img{
+    height: 50px;
+}
+.text .an{
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+.text .price{
+    color: hsl(224, 23%, 55%);
+    position: relative;
+    top: 5px;
+}
+.icon a{
+    align-self: center;
+    margin-left: auto;
+}
+button{
+    margin-top: 20px;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    flex-grow: 1;
+    box-shadow: 0px 10px 50px -10px hsl(245, 75%, 52%);
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+
+}
+.cancle{
+    padding: 30px;
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+    font-weight: 600;
+}
+@media (max-width:600px){
+    .container{
+        width: 90%;
+    }
+}
+@media (min-width:600px) and (max-width:900px){
+    .container{
+        width: 60%;
+    }
+}
