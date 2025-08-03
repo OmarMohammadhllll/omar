@@ -1,0 +1,102 @@
+
+body{
+    background-color: hsl(30, 38%, 92%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.container .image{
+    width: 50%;
+}
+.container .image img{
+    width: 100%;
+    height: 100%;
+    
+
+}
+.container .content{
+    width: 50%;
+    margin: 30px;
+    
+
+}
+.content h4{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 15px;
+}
+.content h1{
+    margin-bottom: 15px;
+    color: hsl(212, 21%, 14%);
+    
+}
+.content p{
+    margin-bottom: 15px;
+    color: hsl(228, 12%, 48%);
+}
+.price{
+    margin-bottom: 20px;
+
+}
+.price .current{
+    font-size: 35px;
+    color: hsl(158, 36%, 37%);
+    margin-right: 10px;
+}
+.price .later{
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    text-decoration-thickness: .7px;
+    text-decoration-color: hsl(228, 12%, 48%);
+}
+button{
+    background-color: hsl(158, 42%, 18%);
+    color: white;
+    flex-grow: 1;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+
+    
+
+}
+.btn{
+    display: flex;
+    align-items: center;
+    height: 45px;
+}
+.btn span{
+    margin-left: 10px;
+}
+button:hover{
+    background-color: hsl(157, 82%, 9%);
+}
+@media (max-width:700px){
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+    .container .image {
+        width: 100%;
+    }
+    .container .content{
+        width: 80%;
+    }
+    .container .image img {
+    height: 300px;
+    }
+}
